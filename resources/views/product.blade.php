@@ -19,27 +19,29 @@
                 </div>
             @endforeach
         </div>
-        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a> -->
+        </a>
     </div>
 
-    @foreach ($products as $item)
-        <div class="trending-wrapper">
-            <h3>Trending Products</h3>
-            <div class="">
-                <img class="" src="{{$item['gallery']}}" >
+    
+    <div class="trending-wrapper">
+        <h3>Trending Products</h3>
+        @foreach ($products as $item)
+            <div class="trending-item">
+                <img class="trending-img" src="{{$item['gallery']}}" >
                 <div class="">
                     <h3>{{$item['name']}}</h3>
                 </div>
             </div>
-        </div>
-    @endforeach
+        @endforeach    
+    </div>
+    
 </div>
 
 

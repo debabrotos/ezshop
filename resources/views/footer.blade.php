@@ -1,5 +1,5 @@
 <div class="card">
-  <div style ="background-color: grey;"class="card-header">
+  <div style ="clear:both ;background-color: grey;"class="card-header">
     This is footer 
   </div>
   <!-- <div class="card-body">
