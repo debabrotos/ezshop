@@ -33,6 +33,10 @@
     }
     .custom-product{
         height: 600px;
+        background-color: blue;
+    }
+    .slider-text{
+        background-color: #00000066 !important;
     }
 </style>
 </html>
