@@ -33,7 +33,6 @@
     }
     .custom-product{
         height: 600px;
-        background-color: blue;
     }
     .slider-text{
         background-color: #00000066 !important;
@@ -43,9 +42,13 @@
     }
     .trending-item{
         float: left;
+        margin-right:50px;
     }
     .trending-wrapper{
         margin-left:30px;
+    }
+    .detail-img{
+        height: 200px;
     }
 </style>
 </html>
