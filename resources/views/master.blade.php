@@ -50,5 +50,8 @@
     .detail-img{
         height: 200px;
     }
+    .cart-list-divider{
+        
+    }
 </style>
 </html>

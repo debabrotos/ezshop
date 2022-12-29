@@ -1,10 +1,14 @@
 <?php
 use App\Http\Controllers\ProductController;
-$total = ProductController::cartItem();
+$total = 0;
+if(Session::has('user'))
+{
+  $total = ProductController::cartItem();
+}
 
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="/">EZShop</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,7 +24,23 @@ $total = ProductController::cartItem();
       </form>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Cart({{$total}})</a></li>
+      <li><a href="/cartlist">Cart({{$total}})</a></li>
+
+      <div style="margin-left:10px" class="dropdown_header">
+        @if(Session::has('user'))
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </li>
+        @else
+        <li><a href="#">Login</a></li>
+        @endif
+      </div>
+      
+
     </ul>
   </div>
 </nav>
