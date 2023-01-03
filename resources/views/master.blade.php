@@ -32,7 +32,7 @@
         height: 400px !important;
     }
     .custom-product{
-        height: 600px;
+        min-height: 900px;
     }
     .slider-text{
         background-color: #00000066 !important;
@@ -51,7 +51,9 @@
         height: 200px;
     }
     .cart-list-divider{
-        
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 </style>
 </html>

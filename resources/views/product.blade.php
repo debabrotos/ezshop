@@ -12,7 +12,8 @@
             @foreach ($products as $item)
                 <div class="carousel-item {{$item['id']==1?'active':''}}">
                     <a href="detail/{{$item['id']}}">
-                        <img class="d-block w-100 slider-img" src="{{$item['gallery']}}" alt="First slide">
+                        <img style="    height: 400px !important;width: 400px !important; margin:auto; text-align: center;" 
+                            class="d-block w-100 slider-img" src="{{$item['gallery']}}" alt="First slide">
                         <div class="carousel-caption slider-text">
                             <h3>{{$item['name']}}</h3>
                             <P>{{$item['description']}}</P>
