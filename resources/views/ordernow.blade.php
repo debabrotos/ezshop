@@ -4,36 +4,40 @@
 <div class="custom-product">
     <div class="col-sm-10">
         <table class="table">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                    <td>Amount</td>
+                    <td>$ {{$total}}</td>
                 </tr>
                 <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                    <td>Tax</td>
+                    <td>$</td>
                 </tr>
                 <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                    <td>Delivery</td>
+                    <td>$ 10</td>
                 </tr>
+                <tr>
+                    <td>Total Amount</td>
+                    <td>$ {{$total+10}}</td>
+                </tr>
+                
             </tbody>
          </table>
-        
+        <div class="orderform">
+            <form>
+                <div class="form-group">
+                    <textarea type="" placeholder="Type Your Adress Here" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Payment Method</label> <br>
+                    <input type="radio" name="payment"> <span>Online payment</span><br>
+                    <input type="radio" name="payment"> <span>EMI payment</span><br>
+                    <input type="radio" name="payment"> <span>Cash on Delivery</span>
+                </div>
+                <button type="submit" class="btn btn-default">Order Now</button>
+            </form>
+        </div>
     </div>
 </div>
 

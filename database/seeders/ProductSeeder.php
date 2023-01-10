@@ -18,33 +18,13 @@ class ProductSeeder extends Seeder
         //
         DB::table('products')->insert([
             [
-            'name'=>'Example 1',
-            "price"=>"69000",
-            "description"=>"Flagship",
+            'name'=>'Google Pixel 6A',
+            "price"=>"52000",
+            "description"=>"Tensor 5",
             "category"=>"Mobile Phone",
-            "gallery"=>"https://www.google.com",
+            "gallery"=>"https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6a-0.jpg",
             ],
-            [
-            'name'=>'Samsung',
-            "price"=>"69000",
-            "description"=>"Flagship",
-            "category"=>"Mobile Phone",
-            "gallery"=>"https://www.google.com",
-            ],
-            [
-            'name'=>'Samsung',
-            "price"=>"69000",
-            "description"=>"Flagship",
-            "category"=>"Mobile Phone",
-            "gallery"=>"https://www.google.com",
-            ],
-            [
-            'name'=>'Samsung',
-            "price"=>"69000",
-            "description"=>"Flagship",
-            "category"=>"Mobile Phone",
-            "gallery"=>"https://www.google.com",
-            ],
+            
         ]);
     }
 }
