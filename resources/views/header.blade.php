@@ -16,12 +16,14 @@ if(Session::has('user'))
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="/myorders">Order</a></li>
-    
-      <form class="form-inline my-2 my-lg-0">
+      @if(Session::has('user'))
+        <li class="nav-item"><a class="nav-link" href="/myorders">Order</a></li>
+      @endif
+
+      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/cartlist">Cart({{$total}})</a></li>
@@ -36,8 +38,10 @@ if(Session::has('user'))
           </ul>
         </li>
         @else
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
+        <div style="float:right" class="user_panel">
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        </div>
         @endif
       </div>
       
