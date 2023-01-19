@@ -2,21 +2,34 @@
 @section("content")
 
 <div class="container custom-login">
-    <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-            <form action="login" method="POST" >
-                <div class="form-group">
-                    @csrf 
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="myCard1">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 myCard">
+                <div   div class="myLeftCtn">
+                    <form action="login" method="POST" class="myForm text-center">
+                        <header>Log In</header>
+                        @csrf 
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <input class="myInput" type="email" name="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-lock"></i>
+                            <input class="myInput" type="password" name="password"  id="exampleInputPassword1" placeholder="Password" required>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label>
+                                <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
+                                <div class="invalid-feedback">You must check the box.</div>
+                            </label>
+                        </div> -->
+                        <input type="submit" class="butt">
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                
+            </div>
+            
         </div>
     </div>
 </div>
