@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZShop</title>
- 
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{asset('custom_css/custom_css.css')}}">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
 <body>
@@ -24,36 +29,6 @@
 </body>
 
 <style>
-    .custom-login{
-        height:500px;
-        padding-top:100px;
-    }
-    img.slider-img{
-        height: 400px !important;
-    }
-    .custom-product{
-        min-height: 900px;
-    }
-    .slider-text{
-        background-color: #00000066 !important;
-    }
-    .trending-img{
-        height: 100px;
-    }
-    .trending-item{
-        float: left;
-        margin-right:50px;
-    }
-    .trending-wrapper{
-        margin-left:30px;
-    }
-    .detail-img{
-        height: 200px;
-    }
-    .cart-list-divider{
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
+    
 </style>
 </html>

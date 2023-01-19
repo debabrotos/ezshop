@@ -1,4 +1,4 @@
-<div class="card">
+<div style=" bottom: 0px; left: 0px; right: 0px; width: 100%;" class="card">
   <div style ="clear:both ;background-color: grey;"class="card-header">
     This is footer 
   </div>
