@@ -13,6 +13,7 @@ img.slider-img{
 }
 .custom-product{
     min-height: 900px;
+    margin-top: 10px;
 }
 .slider-text{
     background-color: #00000066 !important;
@@ -39,6 +40,45 @@ img.slider-img{
     margin-left:10px;
 }
 
+
+
+/********* HEADER SECTION CSS STARTS ****************************/
+.header_nav, .custom_dropdown_menu{
+  background-color: #C653FF !important;
+  
+}
+.nav_logo {
+  font-size: 30px !important;
+  margin-left: 30px;
+  
+}
+.nav_content a{
+  color: #efefef;
+}
+.nav_items ul li a{
+  /* transition: transform .3s;  */
+  
+}
+.nav_items ul li a:hover{
+  transition:all 0.5s ease ;
+  color: hsl(0, 0%, 0%);
+  /* transform: scale(1.1);  */
+
+}
+.nav_right_panel li a{
+  padding-right: 10px ;
+}
+.nav_right_panel li a{
+  text-decoration: none;
+}
+.nav_right_panel li a:hover{
+
+}
+.custom_dropdown_menu li a{
+  margin-left: 10px;
+}
+
+/********* HEADER SECTION CSS ENDS   ****************************/
 
 /********* LOGIN PAGE CSS STARTS ****************************/
   .myLeftCtn {
