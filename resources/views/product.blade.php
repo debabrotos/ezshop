@@ -8,12 +8,11 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner2222">
             @foreach ($products as $item)
-                <div class="carousel-item {{$item['id']==1?'active':''}}">
+                <div class="carousel_custom_img carousel-item {{$item['id']==1?'active':''}}">
                     <a href="detail/{{$item['id']}}">
-                        <img style="    height: 400px !important;width: 400px !important; margin:auto; text-align: center;" 
-                            class="d-block w-100 slider-img" src="{{$item['gallery']}}" alt="First slide">
+                        <img class="d-block w-100 slider-img" src="{{$item['gallery']}}" alt="First slide">
                         <div class="carousel-caption slider-text">
                             <h3>{{$item['name']}}</h3>
                             <P>{{$item['description']}}</P>

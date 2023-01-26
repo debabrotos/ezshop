@@ -11,6 +11,16 @@ html, body{
 img.slider-img{
     height: 400px !important;
 }
+.carousel_custom_img img{
+  height: 400px !important;
+  width: auto !important; 
+  margin:auto; 
+  text-align: center;
+}
+.carousel-caption{
+  left: 0%  !important;
+  right: 0% !important;
+}
 .slider-text{
     background-color: #00000066 !important;
 }
