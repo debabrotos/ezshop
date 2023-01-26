@@ -11,10 +11,6 @@ html, body{
 img.slider-img{
     height: 400px !important;
 }
-.custom-product{
-    min-height: 900px;
-    margin-top: 10px;
-}
 .slider-text{
     background-color: #00000066 !important;
 }
@@ -29,17 +25,45 @@ img.slider-img{
     margin-left:30px;
 }
 .detail-img{
-    height: 200px;
+  margin-top: 30px;
+}
+.detail-img img{
+    height: 300px;
+    margin-bottom: 20px;
+}
+.detail_button{
+  background-color: #34A2CE;
+  color: white  ;
+}
+.detail_button:hover{
+  background-color: #004D66;
+  color: white  ;
+}
+
+.custom-product{
+  min-height: 900px;
+  margin-top: 10px;
+  /* margin-left: 100px; */
+}
+.cartlist_header{
+  text-align:center; 
+  color:#169CC9;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 .cart-list-divider{
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    margin-top: 30px;
 }
 .user_panel li a{
     margin-left:10px;
 }
-
+.custom_detail{
+  min-height: 900px;
+  margin-top: 30px;
+}
 
 
 /********* HEADER SECTION CSS STARTS ****************************/

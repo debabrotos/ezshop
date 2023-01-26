@@ -13,18 +13,18 @@
                         <div class="form-group">
                         <i class="fas fa-user"></i>
                             <!-- <label for="exampleInputEmail1">User Name</label> -->
-                            <input type="text" name="name" class="myInput" id="exampleInputEmail1" placeholder="User Name">
+                            <input type="text" name="name" class="myInput" id="exampleInputEmail1" placeholder="User Name" required>
                         </div>
                         <div class="form-group">
                             <i class="fas fa-envelope"></i>
                             <!-- <label for="exampleInputEmail1">Email address</label> -->
-                            <input type="email" name="email" class="myInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" name="email" class="myInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                         <div class="form-group">
                             <i class="fas fa-lock"></i>
                             <!-- <label for="exampleInputPassword1">Password</label> -->
-                            <input type="password" name="password" class="myInput" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" name="password" class="myInput" id="exampleInputPassword1" placeholder="Password" required>
                         </div>
                         <button type="submit" class="butt">Submit</button>
                     </form>
