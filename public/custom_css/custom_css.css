@@ -44,7 +44,7 @@ img.slider-img{
 
 /********* HEADER SECTION CSS STARTS ****************************/
 .header_nav, .custom_dropdown_menu{
-  background-color: #C653FF !important;
+  background-color: #004d66 !important;
   
 }
 .nav_logo {
@@ -53,7 +53,7 @@ img.slider-img{
   
 }
 .nav_content a{
-  color: #efefef;
+  color: #C0E8FF;
 }
 .nav_items ul li a{
   /* transition: transform .3s;  */
@@ -90,7 +90,7 @@ img.slider-img{
     /* padding-left: 50px; */
   }
   .myLeftCtn header {
-    color: blueviolet;
+    color: #169CC9;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -103,10 +103,19 @@ img.slider-img{
     background: #fff;
     height: 100%;
     border-radius: 25px;
+    -webkit-box-shadow: 0px 6px 40px 9px rgb(0 77 102 / 24%);
+    -moz-box-shadow: 0px 6px 40px 9px rgb(0 77 102 / 24%);
+    box-shadow: 0px 6px 40px 9px rgb(0 77 102 / 24%);
+  } 
+  /* .myCard {
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
     -webkit-box-shadow: 0px 6px 40px 9px rgb(0 0 153 / 24%);
     -moz-box-shadow: 0px 6px 40px 9px rgb(0 0 153 / 24%);
     box-shadow: 0px 6px 40px 9px rgb(0 0 153 / 24%);
-  } 
+  }  */
   /* .myRightCtn header {
     color: #fff;
     font-size: 44px;
@@ -135,7 +144,7 @@ img.slider-img{
     margin-bottom: 70px;
   } 
   .myLeftCtn .butt {
-    background: linear-gradient(45deg, #bb36fd, #9b00e8);
+    background: linear-gradient(45deg, #45B7E6, #006686);
     color: #fff;
     width: 230px;
     border: none;
@@ -146,14 +155,16 @@ img.slider-img{
     box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
   } 
   .myLeftCtn .butt:hover {
-    background: linear-gradient(45deg, #c85bff, #b726ff);
+    /* transition:all 0.5s ease ; */
+    background: linear-gradient(45deg, #006686, #45B7E6);
+    
   }
   .myLeftCtn .butt:focus {
     outline: none;
   } 
   .myLeftCtn .fas {
     position: relative;
-    color: #bb36fd;
+    color: #169CC9;
     left: 36px;
   } 
   .butt_out {
