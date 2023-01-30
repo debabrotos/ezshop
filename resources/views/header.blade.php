@@ -32,8 +32,8 @@ if(Session::has('user'))
         <li>
           @if(Session::has('user'))
           <a href="/myorders">Orders</a>
-          @endif
           <a href="/cartlist">Cart({{$total}})</a>
+          @endif
         </li>
 
         <div class="dropdown_header">
