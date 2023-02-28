@@ -17,10 +17,15 @@
             <form action="/add_to_cart" method="POST">
                 @csrf
                 <input type="hidden" name="product_id" value="{{$product['id']}}">
+                
+                @if(Session::has('user'))
                 <button class="btn detail_button">Add to Cart</button>
+                @endif
             </form>
-            <br>
-            <button class="btn detail_button">Buy Now</button>
+            @if(Session::has('user'))
+            @else
+                <a href="/login" class="btn detail_button">Buy Now</a>
+            @endif
         </div>
     </div>
     
